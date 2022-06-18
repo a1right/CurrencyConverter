@@ -12,7 +12,7 @@ namespace CurrencyConverter
     {
         public UserInput(Data data)
         {
-            _context = data._context;
+            _context = data.context;
         }
         public string CurrencyName { get; set; }
         public string CurrencyNameConvertTo { get; set; }

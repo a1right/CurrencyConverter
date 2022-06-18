@@ -20,7 +20,7 @@ namespace CurrencyConverter
             _currencyName = userInput.CurrencyName;
             _currencyAmount = userInput.CurrencyAmount;
             _currencyExchangeName = userInput.CurrencyNameConvertTo;
-            _currenciesList = currencies._context;
+            _currenciesList = currencies.context;
         }
 
         public decimal GetCurrencyExchangeAmount()

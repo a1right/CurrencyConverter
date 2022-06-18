@@ -2,7 +2,7 @@
 {
     internal class Data
     {
-        public readonly List<Currency> _context;
+        public readonly List<Currency> context;
         public Data(List<Currency> currencies)
         {
             Currency RUB = new Currency();
@@ -11,12 +11,12 @@
             RUB.CurrencyValueInRoubles = 1;
             RUB.CurrencyNominal = 1;
             currencies.Insert(0,RUB);
-            _context = currencies;
+            context = currencies;
         }
 
         public void PrintAllCurrenciesCharCodes()
         {
-            foreach (var currency in _context)
+            foreach (var currency in context)
             {
                 Console.WriteLine($"Код валюты: ({currency.CurrencyCharCode})\t\tПолное название валюты : {currency.CurrencyName}");
             }
