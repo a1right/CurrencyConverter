@@ -65,7 +65,7 @@ namespace CurrencyConverter
         {
             bool correctInput = false;
             string input = String.Empty;
-            Console.WriteLine("Введите код валюты");
+            Console.WriteLine("Введите код валюты на которую производится обмен");
             while (!correctInput)
             {
                 input = Console.ReadLine();
@@ -98,7 +98,7 @@ namespace CurrencyConverter
 
         public static void PrintResult(this UserInput userInput)
         {
-            Console.WriteLine($"Результат обмена:\n{userInput.CurrencyAmount} {userInput.CurrencyName} = {userInput.CurrencyNameConvertTo} {userInput.CurrencyExchangeAmount}");
+            Console.WriteLine($"Результат обмена:\n{userInput.CurrencyAmount} {userInput.CurrencyName} = {userInput.CurrencyExchangeAmount} {userInput.CurrencyNameConvertTo}");
         }
     }
 }
